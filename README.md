@@ -72,7 +72,7 @@ Jasmine proptype matcher has a peer dependency to [`prop-types`](https://github.
 
 ### Jasmine v2.8
 
-Jasmine proptype matcher is tested usign jasmine v2.8. Lower versions are untested, results may vary.
+Jasmine proptype matcher is tested using jasmine v2.8. Lower versions are untested, results may vary.
 
 ```
 npm i --save prop-types jasmine

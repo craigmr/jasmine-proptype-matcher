@@ -1,5 +1,5 @@
 // Looks like I'm getting fired 😬
-import ReactPropTypesSecret from 'prop-types/lib/ReactPropTypesSecret';
+const ReactPropTypesSecret = require('prop-types/lib/ReactPropTypesSecret');
 
 const PropTypesMatcher = {
     toBePropType: (util, customEqualityTesters) => {
@@ -14,6 +14,21 @@ const PropTypesMatcher = {
             },
         };
     },
+    toBeValidPropTypes: (util, customEqualityTesters) => {
+        return {
+            compare: (values, propTypes) => {
+                for(let valueName in values) {
+                    if (propTypes.hasOwnProperty(valueName)) {
+                        const error = propTypes[valueName](values, valueName, 'toBeValidPropTypes', values[valueName], null, ReactPropTypesSecret);
+                        if (error) {
+                            return { pass: false, message: error.message };
+                        }
+                    }
+                }
+                return { pass: true };
+            },
+        };
+    },
 };
 
-export default PropTypesMatcher;
+module.exports = PropTypesMatcher;

@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "karma start --single-run --browsers ChromeHeadless karma.conf.js",
-    "build": "webpack"
+    "watch": "karma start --auto-watch --browsers ChromeHeadless karma.conf.js"
   },
   "keywords": [
     "jasmine",

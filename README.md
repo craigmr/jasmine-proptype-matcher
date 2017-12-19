@@ -2,9 +2,9 @@
 
 Use the type checking power of React [`prop-types`](https://github.com/facebook/prop-types) as a [matcher](https://jasmine.github.io/2.0/introduction.html#section-Matchers) in [Jasmine](https://jasmine.github.io/2.0/).
 
-Frameworks like [Enzyme](https://github.com/airbnb/enzyme) or [Jest](https://github.com/facebook/jest) are great for checking our component props against defined PropTypes. However there is more to your application to just components. Jasmine PropType matcher steps in to assert the other objects and values of your code using your already defined propTypes.
+Frameworks like [Enzyme](https://github.com/airbnb/enzyme) or [Jest](https://github.com/facebook/jest) are great for checking our component props against defined PropTypes. However there is more to your application to just components. Jasmine proptype matcher steps in to assert the other objects and values of your code using your already defined propTypes.
 
-When write unit tests for your redux actions and reducers use your Components.propTypes to make sure your care correctly formating your store or other data that is sent to your components. Even if you are not using React you can still use PropTypes and Jasmine PropTypes matcher to create a robust type checking unit tests.
+When writing unit tests for your redux actions and reducers use your `Component.propTypes` to make sure your are correctly formating the store's data being sent to your components. Even if you are not using React you can still use PropTypes and Jasmine proptype matcher to create a robust type checking unit tests for any project.
 
 ## Install
 
@@ -62,4 +62,14 @@ expect({
     count: PropTypes.number,
     children: PropTypes.arrayOf(PropTypes.string)
 });
+```
+
+## Compatibility
+
+### PropTypes v15.6
+
+Jasmine proptype matcher has a peer dependency to [`prop-types`](https://github.com/facebook/prop-types/blob/master/README.md#proptypescheckproptypes) 15.6 or greater. Make sure your project has prop-types installed as a dependency.
+
+```
+npm i --save prop-types
 ```

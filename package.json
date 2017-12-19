@@ -4,7 +4,8 @@
   "description": "Use React prop-types to assert values in jasmine. expect(\"hello\").toBePropType(PropType.string)",
   "main": "index.js",
   "scripts": {
-    "test": "karma start --single-run --browsers ChromeHeadless karma.conf.js"
+    "test": "karma start --single-run --browsers ChromeHeadless karma.conf.js",
+    "build": "webpack"
   },
   "keywords": [
     "jasmine",

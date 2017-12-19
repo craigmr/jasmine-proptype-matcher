@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 // Looks like I'm getting fired 😬
 import ReactPropTypesSecret from 'prop-types/lib/ReactPropTypesSecret';
 

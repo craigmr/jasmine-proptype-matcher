@@ -5,3 +5,6 @@ npm-debug.log*
 
 #Dependency Dirs
 node_modules/
+
+#Compiled
+dist/

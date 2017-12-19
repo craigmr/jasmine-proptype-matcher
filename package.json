@@ -1,0 +1,36 @@
+{
+  "name": "jasmine-proptype-matcher",
+  "version": "1.0.0",
+  "description": "Use React prop-types to assert values in jasmine. expect(\"hello\").toBePropType(PropType.string)",
+  "main": "index.js",
+  "scripts": {
+    "test": "karma start --single-run --browsers ChromeHeadless karma.conf.js"
+  },
+  "keywords": [
+    "jasmine",
+    "prop-types",
+    "matcher",
+    "React",
+    "testing",
+    "expect"
+  ],
+  "author": "Craig Simpson (@_craigmr)",
+  "license": "MIT",
+  "peerDependencies": {
+    "prop-types": "^15.6.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-preset-env": "^1.6.1",
+    "jasmine": "^2.8.0",
+    "jasmine-core": "^2.8.0",
+    "karma": "^1.7.1",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-jasmine": "^1.1.1",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^2.0.9",
+    "prop-types": "^15.6.0",
+    "webpack": "^3.10.0"
+  }
+}

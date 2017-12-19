@@ -70,6 +70,10 @@ expect({
 
 Jasmine proptype matcher has a peer dependency to [`prop-types`](https://github.com/facebook/prop-types/blob/master/README.md#proptypescheckproptypes) 15.6 or greater. Make sure your project has prop-types installed as a dependency.
 
+### Jasmine v2.8
+
+Jasmine proptype matcher is tested usign jasmine v2.8. Lower versions are untested, results may vary.
+
 ```
-npm i --save prop-types
+npm i --save prop-types jasmine
 ```

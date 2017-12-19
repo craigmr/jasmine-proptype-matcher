@@ -25,6 +25,7 @@
   "author": "Craig Simpson <craigmr@gmail.com> https://github.com/craigmr",
   "license": "MIT",
   "peerDependencies": {
+    "jasmine": "^2.8.0",
     "prop-types": "^15.6.0"
   },
   "devDependencies": {
@@ -32,7 +33,6 @@
     "babel-loader": "^7.1.2",
     "babel-preset-env": "^1.6.1",
     "jasmine": "^2.8.0",
-    "jasmine-core": "^2.8.0",
     "karma": "^1.7.1",
     "karma-chrome-launcher": "^2.2.0",
     "karma-jasmine": "^1.1.1",

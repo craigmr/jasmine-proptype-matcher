@@ -1,4 +1,4 @@
-# Jasmine PropTypes Matcher
+# Jasmine PropTypes Matcher [![Build Status](https://travis-ci.org/craigmr/jasmine-proptype-matcher.svg?branch=master)](https://travis-ci.org/craigmr/jasmine-proptype-matcher) [![npm version](https://badge.fury.io/js/jasmine-proptype-matcher.svg)](https://badge.fury.io/js/jasmine-proptype-matcher)
 
 Use the type checking power of React [`prop-types`](https://github.com/facebook/prop-types) as a [matcher](https://jasmine.github.io/2.0/introduction.html#section-Matchers) in [Jasmine](https://jasmine.github.io/2.0/).
 
